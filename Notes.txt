@@ -1,1 +1,99 @@
-Nothing to show now.
+
+GIT
+----
+What is git?
+Answer: Git is a free and open-source distributed version control system(DVCS) designed to handle everything from small to very large projects with speed and efficiency. It was created by Linus Torvalds in 2005 for the development of the Linux kernel. 
+
+Check version: 
+- Open cmd
+- type "git --version"
+
+What is GitHub?
+Answer: GutHub us a web based platform for software development that uses Git for version control, allowing developers to host, track, and collaborate on code projects. It acts as a central hub for developers to share and manage code, find open-source projects and work together on projects by suing features like pull requests, branches, and version history. 
+
+--------------------
+Git & GitHub workflow
+--------------------
+- Create empty repository
+- Add files to staging area
+- Commit files to git repository
+- Push files to remote repository
+
+*** You can always check the status of the files using "git status" command.
+
+
+1. How to create an empty repository...
+ command ---> git init
+  1.1 -- How to uninitialized an initiated local repository?
+ command ---> rm -rf .git
+
+2. How to add files to staging?
+ command ---> 
+		- git add -A (for all files)
+		- git add FilePath or FileName (for a specific file)
+
+ 2.1 How to remove files from staging?
+ command ---> 
+		- git reset HEAD -- (for all files)
+		- git rm --cached FilePath or FileName (for a specific file)
+
+3. provided user info to git repo. (one time)
+ 
+	git config --global user.name "your name"
+    	git config --global user.email "your email"
+
+4. How to commit files to local repository?
+  command --> git commit -m "commit message"
+ 4.1 How to remove a committed file from local repository?
+  command --> git rm --cached FilePath or FileName
+
+
+
+
+
+Round1
+----
+1)  create a new local repository  ( one time)
+git init
+
+
+2) provided user info to git repo. (one time)
+ 
+	git config --global user.name "your name"
+    	git config --global user.email "your email"
+
+
+3) Adding files/folders to staging/indexing
+    git add -A         -->add all the files and folders to staging
+    git add filename
+    git add *.java
+    git add foldername
+
+4) Commit the code into Local(git) repository
+	git commit -m "commit message"
+
+5) connect local repository with remote rep.(One time)
+	git remote add origin "https://github.com/pavanoltraining/OpencartV121.git"
+  
+
+6) push the code into remote repository.
+   	git push origin master
+
+
+
+
+Round2
+------
+1) git add -A
+2) git commit -m "commit message"
+3) git push origin master
+
+Pull the files from remote repository
+---------------
+git pull "https://github.com/pavanoltraining/OpencartV121.git"
+
+
+
+clone new repository to local system
+-------------------------
+git clone "https://github.com/pavanoltraining/testrepo.git"
