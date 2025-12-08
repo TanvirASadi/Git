@@ -47,7 +47,10 @@ Git & GitHub workflow
  4.1 How to remove a committed file from local repository?
   command --> git rm --cached FilePath or FileName
 
-
+5. How to add origin?
+	command --> git remote add origin "origin url goes here"
+	5.1 How to see current origin?
+	command --> git remote -v
 
 
 
@@ -97,3 +100,4 @@ git pull "https://github.com/pavanoltraining/OpencartV121.git"
 clone new repository to local system
 -------------------------
 git clone "https://github.com/pavanoltraining/testrepo.git"
+
